@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="DimensionCalculator.Compound_Interest.CompoundInterest_R"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DimensionCalculator.Compound_Interest"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="btnCal_ci_i" Content="Calculate" HorizontalAlignment="Left" Margin="46,277,0,0" VerticalAlignment="Top" Width="236" Click="btnCal_ci_i_Click" Background="#FF3EA0F0"/>
+        <TextBox x:Name="txtOutput_ci_i" HorizontalAlignment="Left" Margin="46,314,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="14" Width="304" IsReadOnly="True" Background="#330096FF"/>
+        <TextBox x:Name="txtP_ci_i" HorizontalAlignment="Left" Margin="181,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="36" Width="169" Background="#330096FF"/>
+        <TextBlock x:Name="lblP_ci_i" HorizontalAlignment="Left" Margin="46,58,0,0" TextWrapping="Wrap" Text="Principal Amount " VerticalAlignment="Top"/>
+        <TextBox x:Name="txtN_ci_i" HorizontalAlignment="Left" Margin="181,140,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="36" Width="169" Background="#330096FF"/>
+        <TextBox x:Name="txtA_ci_i" HorizontalAlignment="Left" Margin="181,99,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="36" Width="169" Background="#330096FF"/>
+        <TextBlock x:Name="lblN_ci_i" HorizontalAlignment="Left" Margin="46,140,0,0" TextWrapping="Wrap" Text="Number of Years" VerticalAlignment="Top"/>
+        <TextBlock x:Name="lblA_ci_i" HorizontalAlignment="Left" Margin="32,99,0,0" TextWrapping="Wrap" Text="Accumulated Amount" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBox_compoundint_i" HorizontalAlignment="Left" Margin="181,181,0,0" VerticalAlignment="Top" Width="169" Height="36" Background="#330096FF">
+            <ComboBoxItem Content="Anually"/>
+            <ComboBoxItem Content="Semi-Anually"/>
+            <ComboBoxItem Content="Monthly"/>
+            <ComboBoxItem Content="Quarterly"/>
+        </ComboBox>
+        <Button x:Name="btnBackCI_r2" Content="Back" HorizontalAlignment="Left" Margin="10,598,0,0" VerticalAlignment="Top" Click="btnBackCI_r2_Click" Background="#330096FF"/>
+        <TextBox x:Name="lblHeader_ci_R" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Calculate interest rate (i)" VerticalAlignment="Top" Width="340" IsReadOnly="True" Background="#330096FF"/>
+        <Button x:Name="btnReset_ci_R" Content="Reset" HorizontalAlignment="Left" Margin="287,277,0,0" VerticalAlignment="Top" Height="32" Width="63" Click="btnReset_ci_R_Click" Background="#FF3EA0F0"/>
+
+    </Grid>
+</Page>
